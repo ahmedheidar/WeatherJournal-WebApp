@@ -28,3 +28,21 @@ app.listen(port,()=>{
         console.log(error);
     }
 })
+
+// HTTP requests
+app.get('/all',(req,res)=>{
+    try{
+        res.send(projectData);
+    }catch(error){
+        console.log(error);
+    }
+});
+
+app.post('/add',(req,res)=>{
+    try{
+        projectData  = {"temp":req.body.temp,"feel":req.body.feel,"date":req.body.date};
+        console.log(projectData)
+    }catch(error){
+        console.log(error);
+    }
+});

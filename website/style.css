@@ -22,6 +22,11 @@ body{
 
 .entry{
     background: rgba(59, 74, 107, .4);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 200px;
 }
 
 #entryHolder{

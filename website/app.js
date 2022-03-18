@@ -45,7 +45,7 @@ const retrieveData = async () => {
         const allData = await request.json()
         console.log(allData)
         // Write updated data to DOM elements
-        document.getElementById('temp').innerHTML = "Current temprature: " + Math.round(allData.temp) + 'degrees';
+        document.getElementById('temp').innerHTML = "Current temprature in celsius: " + Math.round(allData.temp) + 'degrees';
         document.getElementById('content').innerHTML = "How do you feel: " + allData.feel;
         document.getElementById("date").innerHTML = "Date: " + allData.date;
     }
