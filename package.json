@@ -19,7 +19,9 @@
   "homepage": "https://github.com/ahmedheidar/WeatherJournal-WebApp#readme",
   "dependencies": {
     "body-parser": "^1.19.2",
+    "bootstrap": "^5.1.3",
     "cors": "^2.8.5",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "font-awesome": "^4.7.0"
   }
 }
