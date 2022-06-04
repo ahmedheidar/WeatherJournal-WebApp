@@ -5,6 +5,10 @@ body{
 
 }
 
+.fontForTitle{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 #app{
     display: grid;
     grid-auto-rows: minmax(150px, auto);
@@ -18,7 +22,9 @@ body{
     font-family: 'Oswald', sans-serif;
 }
 
-
+.labelFont{
+    font-weight: bold;
+}
 
 
 /* Style for Placeholder Text*/
@@ -39,3 +45,7 @@ body{
     font-family: 'Oswald', sans-serif;
 
 } 
+
+header{
+    font-size: larger;
+}

@@ -1,5 +1,5 @@
 // Setup empty JS object to act as endpoint for all routes
-projectData = {};
+var projectData = {};
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -30,7 +30,7 @@ app.listen(port,()=>{
 })
 
 // HTTP requests
-app.get('/all',(req,res)=>{
+app.get('/results',(req,res)=>{
     try{
         res.send(projectData);
     }catch(error){
@@ -40,7 +40,7 @@ app.get('/all',(req,res)=>{
 
 app.post('/add',(req,res)=>{
     try{
-        projectData  = {"temp":req.body.temp,"feel":req.body.feel,"date":req.body.date};
+        projectData  = {"city":req.body.city,"temp":req.body.temperature,"feel":req.body.feeling,"date":req.body.todaysDate};
         console.log(projectData)
     }catch(error){
         console.log(error);
